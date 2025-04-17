@@ -1,0 +1,12 @@
+services:
+  catlogdb:
+    container_name: catlogdb
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=CatalogDb
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_catlogdb:/var/lib/postgresql/data

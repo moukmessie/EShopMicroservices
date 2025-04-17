@@ -1,0 +1,11 @@
+services:
+  catlogdb:
+    image: postgres
+
+volumes:
+    postgres_catlogdb:
+       
+
+
+
+
